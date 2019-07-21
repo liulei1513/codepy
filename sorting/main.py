@@ -1,5 +1,5 @@
 import time
-start_time = time.clock()
+start_time = time.perf_counter()
 
 list_ = [9, 2, 7, 4, 5, 6, 3, 8, 1]
 
@@ -163,5 +163,5 @@ def bubblesort(l):
 print(bubblesort(list_))
 
 
-end_time = time.clock()
+end_time = time.process_time()
 print(end_time - start_time)
